@@ -1,0 +1,20 @@
+audio:
+  sample_rate: 22050
+  n_mels: 128
+  n_chroma: 12
+  segment_duration: 5.0
+  similarity_threshold: 0.65
+
+model:
+  text_model_name: "distilbert-base-uncased"
+  gnn_hidden_dim: 128
+  gnn_layers: 2
+  text_embed_dim: 768
+  fusion_dim: 128
+  num_classes: 50
+
+train:
+  batch_size: 16
+  learning_rate: 0.0001
+  epochs: 8
+  tau_contrastive: 0.07
